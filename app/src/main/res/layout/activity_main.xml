@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priyanshu Paliwal"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Player"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/images"/>
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist Name"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="italic"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_alignParentRight="true"
+                android:paddingRight="16dp"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/down"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vol↓↓↓"
+                android:layout_margin="2dp"
+                />
+            <Button
+                android:id="@+id/playPause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Play"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                />
+            <Button
+                android:id="@+id/up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vol↑↑↑"
+                android:layout_margin="2dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/backward"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="backward"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/forward"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="forward"
+                android:layout_margin="2dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
